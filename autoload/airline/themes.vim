@@ -42,10 +42,10 @@ function! airline#themes#patch(palette)
       continue
     endif
     if !has_key(a:palette[mode], 'airline_warning')
-      let a:palette[mode]['airline_warning'] = [ '#000000', '#df5f00', 232, 166 ]
+      let a:palette[mode]['airline_warning'] = [ '#000000', '#ffd7af', 232, 223 ]
     endif
     if !has_key(a:palette[mode], 'airline_error')
-      let a:palette[mode]['airline_error'] = [ '#000000', '#990000', 232, 160 ]
+      let a:palette[mode]['airline_error'] = [ '#000000', '#990000', 232, 167 ]
     endif
     if !has_key(a:palette[mode], 'airline_term')
       let a:palette[mode]['airline_term'] = [ '#9cffd3', '#202020', 85, 232]
@@ -58,7 +58,7 @@ function! airline#themes#patch(palette)
   let a:palette.accents.italic = [ '', '', '', '', 'italic' ]
 
   if !has_key(a:palette.accents, 'red')
-    let a:palette.accents.red = [ '#ff0000' , '' , 160 , '' ]
+    let a:palette.accents.red = [ '#d75f5f' , '' , 167 , '' ]
   endif
   if !has_key(a:palette.accents, 'green')
     let a:palette.accents.green = [ '#008700' , '' , 22  , '' ]
@@ -70,7 +70,7 @@ function! airline#themes#patch(palette)
     let a:palette.accents.yellow = [ '#dfff00' , '' , 190 , '' ]
   endif
   if !has_key(a:palette.accents, 'orange')
-    let a:palette.accents.orange = [ '#df5f00' , '' , 166 , '' ]
+    let a:palette.accents.orange = [ '#ffd7af' , '' , 223 , '' ]
   endif
   if !has_key(a:palette.accents, 'purple')
     let a:palette.accents.purple = [ '#af00df' , '' , 128 , '' ]
